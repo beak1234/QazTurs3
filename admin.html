@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QazTurs - Админ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="header-top">
+                <h1>QazTurs</h1>
+                <button class="lang-toggle" id="langToggle">🌐</button>
+            </div>
+            <div class="lang-menu" id="langMenu">
+                <button data-lang="ru" class="lang-btn">Русский</button>
+                <button data-lang="en" class="lang-btn">English</button>
+                <button data-lang="kk" class="lang-btn">Қазақша</button>
+            </div>
+        </header>
+        <main class="main">
+            <h2 data-translate="placesForApproval"></h2>
+            <ul id="pendingPlaces" class="place-list">
+                <!-- Список будет заполнен JS -->
+            </ul>
+            <button onclick="window.location.href='index.html'" class="button" data-translate="login"></button>
+        </main>
+    </div>
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
