@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QazTurs - Вход</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="header-top">
+                <h1>QazTurs</h1>
+                <button class="lang-toggle" id="langToggle">🌐</button>
+            </div>
+            <div class="lang-menu" id="langMenu">
+                <button data-lang="ru" class="lang-btn">Русский</button>
+                <button data-lang="en" class="lang-btn">English</button>
+                <button data-lang="kk" class="lang-btn">Қазақша</button>
+            </div>
+        </header>
+        <main class="main auth-main">
+            <div class="auth-switcher">
+                <button type="button" class="auth-switch auth-login-switch active" id="showLogin" data-translate="login"></button>
+                <button type="button" class="auth-switch auth-register-switch" id="showRegister" data-translate="registration"></button>
+            </div>
+            <div class="auth-card" id="authCard">
+                <div class="auth-card-inner">
+                    <section class="auth-panel auth-panel-front">
+                        <div class="auth-panel-content">
+                            <div>
+                                <h2 class="auth-title" data-translate="loginTitle"></h2>
+                                <form id="loginForm" class="form auth-form">
+                                    <input type="text" id="loginUsername" data-translate-placeholder="username" placeholder="" required>
+                                    <input type="password" id="loginPassword" data-translate-placeholder="password" placeholder="" required>
+                                    <button type="submit" class="button login-submit" data-translate="login"></button>
+                                    <div class="form-footer">
+                                        <button type="button" class="link-button" id="toggleToRegister" data-translate="noAccount"></button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="auth-panel auth-panel-back">
+                        <div class="auth-panel-content">
+                            <div>
+                                <h2 class="auth-title" data-translate="registrationTitle"></h2>
+                                <form id="registerForm" class="form auth-form">
+                                    <input type="text" id="username" data-translate-placeholder="username" placeholder="" required>
+                                    <input type="email" id="email" data-translate-placeholder="email" placeholder="" required>
+                                    <input type="password" id="password" data-translate-placeholder="password" placeholder="" required>
+                                    <button type="submit" class="button register-submit" data-translate="register"></button>
+                                    <div class="form-footer">
+                                        <button type="button" class="link-button" id="toggleToLogin" data-translate="alreadyAccount"></button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
